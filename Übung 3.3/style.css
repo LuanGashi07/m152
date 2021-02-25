@@ -1,0 +1,53 @@
+.person {
+  display: inline-block;
+  -webkit-box-shadow: #777279 1px 1px;
+          box-shadow: #777279 1px 1px;
+  border: 1px solid black;
+  background-color: gainsboro;
+  padding: 10px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.person__image {
+  border-radius: 50%;
+}
+
+.person__title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.person__text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.person__button {
+  border: none;
+  -webkit-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  background-color: #00f000;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 20px;
+}
+
+.person--manager {
+  background-color: blue;
+}
+
+.person--manager .person__button {
+  background-color: red;
+}
+
+.person:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.person:hover .person__button {
+  background-color: darkgreen;
+}
+/*# sourceMappingURL=style.css.map */
