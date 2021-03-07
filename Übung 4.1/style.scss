@@ -1,0 +1,18 @@
+.container{
+width: 100%;
+display: flex;
+}
+
+div > div{
+    border: 1px solid black;
+    height: 200px;
+    flex: auto;
+    flex-grow: 1;
+    &:first-child{
+    flex-shrink: 0;
+    }
+    
+    &:last-child{
+        flex-grow: 1;
+    }
+}   
